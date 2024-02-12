@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white-color:white;
+    --red-color:red;
+    --blue-color:blue;
+    --green-color:green;
+}
+body{
+    background-color: var(--white-color)
+}
+.parent{
+    margin: 10px 10px;
+}
+.s-name, .lastName,.email-student,.student-gender,.s-guardian,.s-address,.s-age,.sg-address,.newdiv{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0px;
+}
+input,select{
+    width: 400px;
+    padding: 10px;
+    outline: none;
+}
+.parent label{
+    margin: 10px 0px;
+}
+small{
+    color: red;
+    font-size: 20px;
+}
+button{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+}

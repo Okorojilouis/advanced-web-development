@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="parent">
+        <h2 class="formheader">STUDENT'S FORM</h2>
+        <form action="mailto:okorojilouis@yahoo.com" method="post" autocomplete="on">
+        <div class="s-name">
+            <label for="student-name">students first name<small>*</small></label>
+            <input name="student-name" type="text" id="student-name" placeholder="enter your name" autocomplete="family-name" required>
+        </div>
+        <div class="lastName">
+            <label for="student-name">students last name<small>*</small></label>
+            <input name="student-name" type="text" id="lastName" placeholder="enter your last name" autocomplete="name" required>
+        </div>
+        <div class="email-student"> 
+            <label for="s-email">students Email<small>*</small></label>
+            <input name="s-email" type="email" id="s-email" placeholder="enter your email" autocomplete="email">
+        </div>
+        <div class="student-gender">
+            <label for="s-gender">students Gender<small>*</small></label>
+            <input list="gender-select" type="text">
+            <datalist id="gender-select">
+                <option value="male"></option>
+                <option value="female"></option>
+                <option value="other"></option>
+            </datalist>
+        </div>
+        <div class="s-guardian">
+            <label for="student-guardian">students guardian name<small>*</small></label>
+            <input type="text" id="student-guardian" placeholder="enter your guardian name" autocomplete="family-name">
+        </div>
+        <div class="s-address">
+            <label for="student-address">students address<small>*</small></label>
+            <input type="text" id="student-guarddress" placeholder="enter your address" autocomplete="family-name">
+        </div>
+        <div class="s-age">
+            <label for="student-age">students age<small>*</small></label>
+            <input type="date" id="student-age" placeholder="enter your age" autocomplete="bday-year">
+        </div>
+        <div class="sg-address">
+            <label for="student-guardian address">students guardian address<small>*</small></label>
+            <input type="text" id="student-guardian address" placeholder="enter your guardian address" autocomplete="address-level1">
+        </div>
+        <div class="newdiv">
+            <label for="religion">religion</label>
+            <input type="text" >
+            <select name="religion" id="">
+                <option value="">Christianity</option>
+                <option value="">Islam</option>
+                <option value="">None</option>
+            </select>
+            <div class="newdiv2">
+                <label for="Gender">Gender</label>
+                <input name="male" type="radio">
+            </div>
+        </div>
+        <button>submit</button>
+     </form>
+    </div>
+    
+</body>
+</html>
